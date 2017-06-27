@@ -14533,10 +14533,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/adriencerdan/Projects/FightClub/FightClub/FightClub.csproj",
+      "projectUniqueName": "/Users/adriencerdan/Projets/fightclub/FightClub/FightClub.csproj",
       "projectName": "FightClub",
-      "projectPath": "/Users/adriencerdan/Projects/FightClub/FightClub/FightClub.csproj",
-      "outputPath": "/Users/adriencerdan/Projects/FightClub/FightClub/obj",
+      "projectPath": "/Users/adriencerdan/Projets/fightclub/FightClub/FightClub.csproj",
+      "outputPath": "/Users/adriencerdan/Projets/fightclub/FightClub/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

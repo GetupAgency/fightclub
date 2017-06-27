@@ -16,7 +16,7 @@ namespace FightClub
                 Health = 500,
                 CC = 50,
                 CD = 120,
-                Name = "Ragnar"
+                Name = "Ragnaru"
             };
 
 			Fighter fighter2 = new Fighter

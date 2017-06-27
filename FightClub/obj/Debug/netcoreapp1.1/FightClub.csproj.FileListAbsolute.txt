@@ -8,3 +8,13 @@
 /Users/adriencerdan/Projects/FightClub/FightClub/obj/Debug/netcoreapp1.1/FightClub.dll
 /Users/adriencerdan/Projects/FightClub/FightClub/obj/Debug/netcoreapp1.1/FightClub.pdb
 /Users/adriencerdan/Projects/FightClub/FightClub/obj/Debug/netcoreapp1.1/FightClub.csprojResolveAssemblyReference.cache
+/Users/adriencerdan/Projets/fightclub/FightClub/bin/Debug/netcoreapp1.1/FightClub.deps.json
+/Users/adriencerdan/Projets/fightclub/FightClub/bin/Debug/netcoreapp1.1/FightClub.runtimeconfig.json
+/Users/adriencerdan/Projets/fightclub/FightClub/bin/Debug/netcoreapp1.1/FightClub.runtimeconfig.dev.json
+/Users/adriencerdan/Projets/fightclub/FightClub/bin/Debug/netcoreapp1.1/FightClub.dll
+/Users/adriencerdan/Projets/fightclub/FightClub/bin/Debug/netcoreapp1.1/FightClub.pdb
+/Users/adriencerdan/Projets/fightclub/FightClub/obj/Debug/netcoreapp1.1/FightClub.csprojResolveAssemblyReference.cache
+/Users/adriencerdan/Projets/fightclub/FightClub/obj/Debug/netcoreapp1.1/FightClub.csproj.CoreCompileInputs.cache
+/Users/adriencerdan/Projets/fightclub/FightClub/obj/Debug/netcoreapp1.1/FightClub.AssemblyInfo.cs
+/Users/adriencerdan/Projets/fightclub/FightClub/obj/Debug/netcoreapp1.1/FightClub.dll
+/Users/adriencerdan/Projets/fightclub/FightClub/obj/Debug/netcoreapp1.1/FightClub.pdb
