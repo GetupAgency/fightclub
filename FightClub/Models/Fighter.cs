@@ -16,6 +16,7 @@ namespace FightClub
 		public double Health { get; set; }
 		public double Armor { get; set; }
         public double Exp { get; set; }
+
         public int CriticalChance { get; set; }
 		public int CriticalDamage { get; set; }
 

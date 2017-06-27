@@ -8,6 +8,12 @@ namespace FightClub
         
         static void Main(string[] args)
         {
+            // coup raté
+            // plusieurs combats en meme temps
+            // chance de taper 2 fois
+            // Paralyser pour le tour d'après
+
+
             // On déclare et on initialise les combattants
             Fighter fighter1 = new Fighter
                 // Pour voir les propriétés d'un fighter -> clic droit + Atteindre la déclaration
@@ -15,19 +21,19 @@ namespace FightClub
                 Armor = 45,
                 Strength = 45,
                 Exp = 0,
-                Health = 500,
+                Health = 10000,
                 CriticalChance = 50,
-                CriticalDamage = 120,
-                Name = "Ragnaru"
+                CriticalDamage = 170,
+                Name = "Ragnar"
             };
 			Fighter fighter2 = new Fighter
 			{
 				Armor = 45,
 				Strength = 55,
 				Exp = 0,
-				Health = 500,
+				Health = 15500,
                 CriticalChance = 50,
-                CriticalDamage = 150,
+                CriticalDamage = 121,
 				Name = "Hercule"
 			};
 
@@ -54,11 +60,12 @@ namespace FightClub
 
                 // On définit si chaque joueur dispose d'un coup critique lors de ce round
                 fighters[0].IsCritical = IsCritical(fighters[0].CriticalChance);
+
 				fighters[1].IsCritical = IsCritical(fighters[1].CriticalChance);
 
                 // Si le premier combattant fait un coup critique
 				if(fighters[0].IsCritical){
-                    fighters[0].CurrentStrength = fighters[0].Strength * (fighters[0].CriticalDamage / 10);
+                    fighters[0].CurrentStrength = fighters[0].Strength * (1 + (fighters[0].CriticalDamage / 100));
                 }
                 else{
                     fighters[0].CurrentStrength = fighters[0].Strength;
@@ -67,15 +74,17 @@ namespace FightClub
 				// Si le second combattant fait un coup critique
 				if (fighters[1].IsCritical)
 				{
-					fighters[1].CurrentStrength = fighters[1].Strength * (fighters[1].CriticalDamage / 10);
+					fighters[1].CurrentStrength = fighters[1].Strength * (1 + (fighters[1].CriticalDamage / 100));
 				}
 				else
 				{
 					fighters[1].CurrentStrength = fighters[1].Strength;
 				}
 
+                Console.WriteLine("force premier : " + fighters[0].CurrentStrength.ToString());
+                Console.WriteLine("force second : " + fighters[1].CurrentStrength.ToString());
 				// On calcule l'impact de la frappe sur la santé de l'adversaire :
-                // Santé = Santé - (Force de l'adversaire - (Force de l'adversaire * (L'armure du receveur / 100))
+				// Santé = Santé - (Force de l'adversaire - (Force de l'adversaire * (L'armure du receveur / 100))
 				fighters[0].Health = fighters[0].Health - (fighters[1].CurrentStrength - (fighters[1].CurrentStrength * (fighters[0].Armor / 100)));
                 fighters[1].Health = fighters[1].Health - (fighters[0].CurrentStrength - (fighters[0].CurrentStrength * (fighters[1].Armor / 100)));
 
