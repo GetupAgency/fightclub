@@ -54,10 +54,13 @@ namespace FightClub
                 fighters[0].Health = fighters[0].Health - (fighters[1].Strength - (fighters[1].Strength * (fighters[0].Armor / 100)));
                 fighters[1].Health = fighters[1].Health - (fighters[0].Strength - (fighters[0].Strength * (fighters[1].Armor / 100)));
 
-                Console.WriteLine("****** ROUND "+i+" *******"+(fighters[1].Strength - (fighters[1].Strength * (fighters[0].Armor / 100))).ToString());
+                Console.WriteLine("****** ROUND "+i+" *******");
+
                 Console.WriteLine("coup critique : "+critical1.ToString());
-				Console.WriteLine("health fighter 1 : " + fighters[0].Health.ToString());
-				Console.WriteLine("health fighter 2 : " + fighters[1].Health.ToString());
+				
+                Console.WriteLine("health fighter 1 : " + fighters[0].Health.ToString());
+				
+                Console.WriteLine("health fighter 2 : " + fighters[1].Health.ToString());
 
                 if (fighters[0].Health <= 0){
 					return fighters[1].Name;
