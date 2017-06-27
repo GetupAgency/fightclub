@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{2AFD7EAD-8E3C-41F5-B6EB-1ABAB3C289EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FightClub/Program.cs">
+    <Files>
+      <File FileName="FightClub/Program.cs" Line="62" Column="46" />
+      <File FileName="FightClub/Fighter.cs" Line="2" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FightClub PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
