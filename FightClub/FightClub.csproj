@@ -8,4 +8,7 @@
   <ItemGroup>
     <Compile Remove="Utils.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>
