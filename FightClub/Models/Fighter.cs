@@ -16,9 +16,9 @@ namespace FightClub
 		public double Health { get; set; }
 		public double Armor { get; set; }
         public double Exp { get; set; }
-
         public int CriticalChance { get; set; }
 		public int CriticalDamage { get; set; }
+        public int MissedChance { get; set; }
 
         // Propriétés qui changent à chaque round
 		public bool IsCritical { get; set; }
