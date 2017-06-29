@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\gcerd\\.nuget\\packages"
+      "/Users/adriencerdan/.nuget/packages"
     ]
   }
 }
