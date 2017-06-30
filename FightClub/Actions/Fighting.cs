@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
@@ -15,7 +15,6 @@ namespace FightClub
             // idées pour faire évoluer
 			// chance de taper 2 fois
 			// Paralyser pour le tour d'après
-
 
 			// On déclare et on initialise les combattants
 			Fighter fighter1 = new Fighter
@@ -50,7 +49,6 @@ namespace FightClub
 				fighter2
 			};
 
-            // GoFight(fighters) est la méthode qui réalise le combat, elle renvoie le nom du vainqueur
             if (File.Exists(@"datafights.txt")){
                 var jsonText = System.IO.File.ReadAllText(@"datafights.txt");
 				stats = JsonConvert.DeserializeObject<Datafights>(jsonText);
@@ -58,16 +56,20 @@ namespace FightClub
             else {
 				LaunchStats();
 			}
-				Console.WriteLine("And the winner is : " + GoFight());
-				//GenerateRandom();
-				string json = JsonConvert.SerializeObject(stats);
+
+            // GoFight(fighters) est la méthode qui réalise le combat, elle renvoie le nom du vainqueur
+            var winner = GoFight();
+
+			Console.WriteLine("And the winner is : " + winner);
+
+			string JsonToSaveOnFile = JsonConvert.SerializeObject(stats);
 
 				//write string to file
 				if (File.Exists(@"datafights.txt"))
 				{
 					File.Delete(@"datafights.txt");
 				}
-				System.IO.File.WriteAllText(@"datafights.txt", json);
+				System.IO.File.WriteAllText(@"datafights.txt", JsonToSaveOnFile);
 
 			
 
