@@ -23,9 +23,7 @@ namespace FightClub
 		public static bool IsSuccess(int cc)
 		{
             var randomNumber = RandomNumber(0, 100);
-            Console.WriteLine(RandomNumber(0,100));
 			return randomNumber < cc;
-
 		}
 		
     }

@@ -19,7 +19,7 @@ namespace FightClub
         public int CriticalChance { get; set; }
 		public int CriticalDamage { get; set; }
         public int MissedChance { get; set; }
-
+        public FightStats Stats { get; set; }
         // Propriétés qui changent à chaque round
 		public bool IsCritical { get; set; }
 		public bool IsMissed { get; set; }
@@ -33,7 +33,7 @@ namespace FightClub
         // Le constructeur de notre classe, qui permet d'initialiser des variables, de faire des traitements etc...
 		public Fighter()
         {
-            
+            Stats = new FightStats();
         }
     }
 }
